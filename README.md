@@ -12,21 +12,7 @@ Look for the string `Something from resource` in log output.
 
 ## Details
 The following code
-```java
-Log.infov("Something from resource",
-    kv("timestamp", "timestamp from resource"),
-    kv("sequence", "sequence from resource"),
-    kv("loggerClassName", "loggerClassName from resource"),
-    kv("loggerName", "loggerName from resource"),
-    kv("level", "level from resource"),
-    kv("message", "message from resource"),
-    kv("threadName", "threadName from resource"),
-    kv("threadId", "threadId from resource"),
-    kv("hostName", "hostName from resource"),
-    kv("processName", "processName from resource"),
-    kv("processId", "processId from resource"),
-    kv("else", "else from resource"));
-```
+https://github.com/langsamu/quarkiverse-json-duplicate-structured-argument/blob/14611a1146a05d95d147378958787249e7752f81/src/main/java/com/example/DefaultResource.java#L16-L28
 
 produces the following log output which is illegal JSON due to duplicate property names:
 ```json
