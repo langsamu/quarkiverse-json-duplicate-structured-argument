@@ -1,6 +1,8 @@
 # Quarkiverse Logging JSON: Property pollution reproducer
 
+## Summary
 
+At 3.0.0, the Quarkiverse Logging Json library enables users to emit log records that are not well-formed JSON by including structured arguments with the same name as existing properties that are emitted by the library itself.
 
 ## To reproduce
 
